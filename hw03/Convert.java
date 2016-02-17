@@ -19,9 +19,9 @@ public class Convert{
         
         //Convert meters to inches
         double distanceInches;
-        distanceInches=distanceMeters*39.370;
+        distanceInches=((int)(10000*(distanceMeters*39.370)))/10000.0;
         
         //output 
         System.out.println("The distance, "+distanceMeters+" meters, in inches is: " +distanceInches);
-    }
-}
+    }//end of main method
+}//end of class
