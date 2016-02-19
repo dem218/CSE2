@@ -7,8 +7,9 @@ This program will be able to pick a random card/number.*/
 public class CardGenerator{
     //main method
     public static void main(String[]args){
-        int card=(int)(Math.random()*52)+1;
-        String result="";
+        int card=(int)(Math.random()*52)+1; //Select random number between 1 and 52
+        String result=""; // Store result variable
+        //set suit name to ranf of numbers
         if ((card>=1) && (card<=13)){
             result="diamonds";
         }
@@ -21,10 +22,11 @@ public class CardGenerator{
         if((card>=40) && (card<=52)){
             result="spades";
         }
-        int test=card%13;
-        String type="";
+        int test=card%13;  
+        String type=""; //store variable
+        //Type/number of card 
         switch (test){
-            case 0: type="2";
+            case 0: type="2"; 
             break;
             case 1: type="3";
             break;
@@ -51,6 +53,6 @@ public class CardGenerator{
             case 12: type="ace";
             break;
         }
-            System.out.println("The card is "+type+" of "+result);
+            System.out.println("The card is "+type+" of "+result); //print output statement
     }//end of main method
 } //end of class
