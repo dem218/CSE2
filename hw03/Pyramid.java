@@ -30,5 +30,6 @@ public class Pyramid{
         double pyramidVolume;
         pyramidVolume=(baseLength*baseWidth*pyramidHeight)/3;
         System.out.println("The volume of the pyramid is "+pyramidVolume);
+        
     }//end of main method
 }//end of class

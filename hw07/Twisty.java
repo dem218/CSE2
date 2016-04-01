@@ -51,10 +51,8 @@ public class Twisty{ //defines class
             }
         }
         int sets=length/(width*2);
-       int patternone=0;
-       int patterntwo=0;
-       int hash=0;
-       int slash=0;
+       //int hash=0;
+       //int slash=0;
        int numLine=0;
        int line=(width/2);
        int space=0;
@@ -172,14 +170,14 @@ public class Twisty{ //defines class
             System.out.println();
            }
             
-           space=((width/2)- 1);
+           
            
        
             while(countLine<line){
-                countSpace3=0;
-            countSpace=0;
+              countSpace=0;
               countSpace2=0;
-              
+              countSpace3=0;
+              space--;
               spaceThree--;
               spaceTwo=spaceTwo+2;
               while (count1<sets){
@@ -219,20 +217,19 @@ public class Twisty{ //defines class
                    System.out.print(" ");
                    countSpace3++;
                }
+               countSpace3=0;
                
               count1++;
                
                 }
-              
               count1=0;
               countLine++;
-              space--;
+              
               System.out.println();
               
-             
               
               }
-              
+              countLine=0;
               
        
               
