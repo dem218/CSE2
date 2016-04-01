@@ -2,7 +2,8 @@
 CSE002
 03/30/16
 Rectangularize Program
-This program will be able to*/
+This program will be able to print out lines of the length of a number from an input or repeat
+a word as many times as its length*/
 import java.util.Scanner;
 public class Rectangularize{
     
@@ -22,7 +23,7 @@ public class Rectangularize{
     }
     //if the input is a string then run this program
     public static void Rectangular(String string){
-        //prints out as many times as the length of the word and the length of the word
+        //prints out the word as many times as the length of the word
         int x= 0;
         System.out.println("Output");
         while (x<string.length()){

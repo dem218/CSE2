@@ -2,12 +2,14 @@
 CSE002
 03/30/16
 Games program
-This program will be able to */
+This program will be able to make several methods for different games and the main method will call the game the
+user inputs.*/
 
 import java.util.Scanner; //import scanner do get input from user
 //import java.util.Random; 
 //create a class
 public class Games{
+    //If the user choses the game guessTheBox; it will geneate a random box number out of 3, and will compare to users input.
     public static void guessTheBox(){
         Scanner scanr1= new Scanner (System.in);
         System.out.println("There are 3 boxes, box 1,2 and 3. One of them contains a prize, Guess which box it is: ");
@@ -41,12 +43,14 @@ public class Games{
         }
     }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
+    //If the user choses the game spinTheWheel, it will get a random color and number on "the wheel" and compar to users input
     public static void spinTheWheel(){
         Scanner scanrTwo= new Scanner (System.in);
         System.out.println("There is a wheel with 10 sections, half red and half black, pick one of the colors.");
         String c="";
         int c1=0;
-        boolean good1=false;
+        boolean good1=false; 
+        //check if the input is good
         while (!good1){
         if (scanrTwo.hasNext()){
             c=scanrTwo.next();
@@ -80,6 +84,7 @@ public class Games{
         int n=0;
         int r=0;
         boolean good2=false;
+        //check if the input is good
         while (!good2){
         if (scanrTwo.hasNextInt()){
             n=scanrTwo.nextInt();
@@ -113,6 +118,7 @@ public class Games{
         }
     }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+   //if user choses scrambler, it will scramble the word the user puts in
     public static void scrambler(){
         Scanner scanr3= new Scanner (System.in);
         boolean good1=false;
@@ -151,7 +157,7 @@ public class Games{
         Scanner scanr= new Scanner (System.in); //create instance for scanner
         
         String d="";
-        
+        //ask user which game they want to play and call the method of that game
             System.out.println("Pick a game: guessTheBox, spinTheWheel, or scrambler"); //ask user to pick a game
             if(scanr.hasNext()){ 
                 d=scanr.next();
